@@ -13,7 +13,6 @@ public class DwarfWarrior extends BaseHero {
     }
 
     //metoda koja definiše kako se menjaju stat-ovi za dwarf warrior-a kada pretrpi štetu tj. udarac
-    //method that describes how heroes stats are changing when a hero is under attack
     @Override
     public void receiveHit() {
         this.health -=10;
@@ -24,7 +23,6 @@ public class DwarfWarrior extends BaseHero {
     }
 
     //metoda koja definiše ponašanje kada warrior zamahne primarnim oružjem
-    //method that describes the primary weapon attack
     @Override
     public void primaryFire() {
         if (this.isDead==false){
