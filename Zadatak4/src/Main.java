@@ -51,18 +51,14 @@ public class Main {
             System.out.println("Da li želite da pogledate podatke o unetim proizvodima? Pritisnite 1 za DA ili bilo koji drugi taster za NE");
             int b = scanner.nextInt();
             if (b == 1) {
-                //Ovde računamo finalnu cenu čokolade, prebacujemo sve podatke o proizvodu u string i štampamo ih
-                //Here we are calculating the final price for the chocolate, converting all data to string and
-                //displaying it
+                
                 chocolate.priceCalc();
                 System.out.println("Cena čokolade sa PDV-om je: "+chocolate.price+" din");
                 String c = chocolate.toString();
                 System.out.println(c);
                 System.out.println();
 
-                //Ovde računamo finalnu cenu vina, prebacujemo sve podatke o proizvodu u string i štampamo ih
-                //Here we are calculating the final price for the wine, coverting all data to string and
-                //displaying it
+                
                 wine.priceCalc();
                 System.out.println("Cena flaše vina sa PDV-om i porezom je: "+wine.price+" din");
                 String d = wine.toString();
@@ -95,18 +91,14 @@ public class Main {
             System.out.println("Da li želite da pogledate podatke o unetim proizvodima? Pritisnite 1 za DA ili bilo koji drugi taster za NE");
             int b = scanner.nextInt();
             if (b == 1) {
-                //Ovde računamo finalnu cenu vina, prebacujemo sve podatke o proizvodu u string i štampamo ih
-                //Here we are calculating the final price for the wine, converting all data to string and
-                //displaying it
+                
                 wine.priceCalc();
                 System.out.println("Cena flaše vina sa PDV-om i porezom je: "+wine.price+" din");
                 String e = wine.toString();
                 System.out.println(e);
                 System.out.println();
 
-                //Ovde računamo finalnu cenu čokolade, prebacujemo sve podatke o proizvodu u string i štampamo ih
-                //Here we are calculating the final price for the chocolate, converting all data to string and
-                //displaying it
+                
                 chocolate.priceCalc();
                 System.out.println("Cena čokolade sa PDV-om je: "+chocolate.price+" din");
                 String f = chocolate.toString();
