@@ -24,36 +24,24 @@ public class Main {
         System.out.println("Dobro došli u rpg simulator!");
         System.out.println("Imate mogućnost da prisustvujete spektakularnoj borbi u kojoj se Dwarf Warrior i Elf Mage suočavaju sa zloglasnom Hidrom");
 
-        //Unos podataka za heroja Dwarf Warrior
-        //Data entry for the hero Dwarf Warrior
         System.out.println("Molimo vas da unesete početne podatke za heroja Dwarf Warrior!");
         System.out.println("Health (1-100):");
         double dwHp = scanner.nextDouble();
         System.out.println("Rage (1-100):");
         double dwRg = scanner.nextDouble();
 
-        //Kreiranje heroja Dwarf Warrior
-        //Creation of the hero
         DwarfWarrior dwarfWarrior = new DwarfWarrior(dwHp,dwRg);
 
-        //Unos podataka za heroja Elf Mage
-        //Data entry for the hero Elf Mage
         System.out.println("Molimo vas da unesete početne podatke za heroja Elf Mage!");
         System.out.println("Health (1-100):");
         double emHp = scanner.nextDouble();
         System.out.println("Mana (1-100):");
         double emMn = scanner.nextDouble();
 
-        //Kreiranje heroja Dwarf Warrior
-        //Creation of the hero
         ElfMage elfMage = new ElfMage(emHp,emMn);
 
-        //Kreiranje heroja Hydra
-        //Creation of the antihero
         Hydra hydra = new Hydra();
 
-        //Simulator borbe počinje i obavlja se po rundama
-        //Fight simulator is starting and goes in rounds
         System.out.println("Unesite broj jedan za početak prve runde");
         int first = scanner.nextInt();
         if (first ==1) {
